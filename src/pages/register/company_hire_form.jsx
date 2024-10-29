@@ -1,4 +1,4 @@
-import C_P_R_F from "./antd/C_P_Register_form";
+import C_P_R_F from "../companies/C_P_Register_form";
 export default function Company_register_form() {
   return (
     <>

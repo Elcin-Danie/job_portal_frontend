@@ -4,6 +4,9 @@ export default function Employ() {
   return (
     <>
       <h1>hello</h1>
+      <main>
+        <Outlet />
+      </main>
     </>
   );
 }

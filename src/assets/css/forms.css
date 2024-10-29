@@ -1,0 +1,231 @@
+.backy {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.center,
+#personal_details_tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.large-step-indicators {
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    grid-auto-flow: column;
+    grid-auto-columns: 160px;
+    row-gap: 10px;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    font-size: 14px;
+    color: #333;
+    position: relative;
+    z-index: 0;
+}
+
+.large-step-indicators x-icon.completed {
+    border-color: #00A5EC;
+    background: #00A5EC;
+    color: #fff;
+}
+
+.large-step-indicators x-icon.completed {
+    border-color: #00A5EC;
+    background: #00A5EC;
+    color: #fff;
+}
+
+.ic-24-profiles:before {
+    content: "\ea0e";
+}
+
+#organization_details_tab {
+    border-color: #00A5EC !important;
+    color: #00A5EC !important;
+    width: 50px;
+    border: 1px solid;
+    border-radius: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#organization_details_tab::before {
+    background: #00A5EC !important;
+    width: 133px;
+    margin-left: -182px;
+    margin-top: 2px;
+}
+
+#internship__details_tab {
+    border-color: #DDD !important;
+    color: #DDD !important;
+    width: 50px;
+    border: 1px solid;
+    border-radius: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.large-step-indicators x-icon:not(:first-of-type)::before {
+    content: " ";
+    border: none;
+    background: #DDD;
+    position: absolute;
+    height: 2px;
+
+    z-index: -1;
+}
+
+[class*=" ic-"],
+[class^=ic-] {
+    font-family: internshala-icons !important;
+    speak: never;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ic-24-experience:before {
+    content: "\e9bc";
+}
+
+.large-step-indicators x-icon:not(:first-of-type)::before {
+    content: " ";
+    border: none;
+    background: #DDD;
+    position: absolute;
+    height: 2px;
+    width: 133px;
+    margin-left: -179px;
+    margin-top: 2px;
+    z-index: -1;
+}
+
+@media(max-width:680px) {
+    .large-step-indicators {
+        grid-auto-columns: 102px !important;
+    }
+
+    #organization_details_tab::before {
+        background: #00A5EC !important;
+        width: 75px;
+        margin-left: -125px;
+        margin-top: 2px;
+    }
+
+    .large-step-indicators x-icon:not(:first-of-type)::before {
+        height: 2px;
+        width: 72px;
+        margin-left: -121px;
+        margin-top: 2px;
+        z-index: -1;
+    }
+
+    ._rem {
+        width: auto !important;
+        padding: 15px;
+    }
+}
+
+._rem {
+    width: 85rem;
+}
+
+/* muliselect drop-button css */
+:where(.css-dev-only-do-not-override-ccdg5a).ant-select-outlined.ant-select-multiple .ant-select-selection-item {
+    background: #008BDC;
+    border: 1px solid transparent;
+    color: white;
+}
+
+label {
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #525252;
+    margin-bottom: 4px;
+}
+
+.check-box {
+    color: #484848;
+    line-height: 1.14285714;
+    font-weight: 400;
+    cursor: pointer;
+    margin-bottom: 0;
+    gap: 5px;
+}
+
+.ant-select-selector,
+input {
+    height: 45px !important;
+    font-size: 18px !important;
+}
+
+.ant-select-selection-item {
+    height: 31px !important;
+}
+
+.colors {
+    color: #ffff !important;
+}
+
+/* */
+#organization_details_tabs {
+    border-color: #00A5EC !important;
+    color: #ffffff !important;
+    width: 50px;
+    border: 1px solid;
+    border-radius: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#organization_details_tabs::before {
+    background: #00A5EC !important;
+    width: 133px;
+    margin-left: -182px;
+    margin-top: 2px;
+}
+
+@media(max-width:680px) {
+    #organization_details_tabs::before {
+        background: #00A5EC !important;
+        width: 75px;
+        margin-left: -125px;
+        margin-top: 2px;
+    }
+}
+
+.multi_choos .ant-space-item {
+    width: 100%;
+}
+
+.coverLetter {
+    color: #8A8A8A !important;
+    font-size: 17px;
+    line-height: 1.57142857;
+    font-weight: 600;
+}
+
+.coverLetter_title {
+    color: #333;
+    font-size: 17px;
+    line-height: 1.57142857;
+    font-weight: 600;
+}

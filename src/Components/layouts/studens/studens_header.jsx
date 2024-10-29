@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faBell, faMessage } from "@fortawesome/free-solid-svg-icons";
 import Log_modal from "../../../pages/register/antd/login_modal";
+import DropdownMenu from "./headermenu/dashbordHeadermenu";
 
 export default function Studens_header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -37,27 +38,24 @@ export default function Studens_header() {
           />
           <div className="font-bold">Jobys</div>
         </div>
-        
-        <ul className="md:flex pl-9 md:pl-0">
-          <div className="">
-          <button onClick={openModal}
-          style={{ border: '1px solid', }}
-          className="rounded-md"
-          >
-          <Log_modal />
-        </button>
-          </div>
-          <Link to="/registration/students">
-            <button className="btn hover:text-gray-200  bg-blue-600 text-white bg-blue-600-gtext-gray-200 py-2 px-3 md:ml-8 rounded text-3xl font-bold">
-              Candidate Sign-up
-            </button>
-          </Link>
-          <Link to="/registration/hire">
-            <button className="btn hover:text-gray-200  bg-blue-600 text-white bg-blue-600-gtext-gray-200 py-2 px-3 md:ml-8 rounded text-3xl font-bold">
-              Employer Sign-up
-            </button>
-          </Link>
-        </ul>
+        <div className="menus flex w-1/2 justify-evenly items-center">
+          <DropdownMenu />
+          <ul className="flex w-1/4 justify-around m-0">
+            <Link>
+              <li>
+              <FontAwesomeIcon icon={faBell} className="text-4xl"/>
+              </li>
+            </Link>
+            <Link>
+              <li>
+              <FontAwesomeIcon icon={faMessage} className="text-4xl"/>
+              </li>
+            </Link>
+            <Link>
+              <li></li>
+            </Link>
+          </ul>
+        </div>
       </div>
 
       <div

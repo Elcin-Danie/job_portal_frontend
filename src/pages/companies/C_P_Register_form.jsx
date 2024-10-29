@@ -1,14 +1,20 @@
 import React from "react";
+import { Link,useNavigate  } from "react-router-dom";
 import { Form, Input, Button } from "antd";
-import "antd/dist/reset.css";
-import Log_modal from "./login_modal";
-import axiosClient from "../../../axiox-client";
+// import "../register/antd/dist/reset.css";
+import Log_modal from "../register/antd/login_modal";
+import axiosClient from "../../axiox-client";
 
 const C_P_R_F = () => {
+  const navigate = useNavigate(); // Hook for navigation
   const onFinish = (values) => {
       axiosClient.post("employ/singup", values)
-      .then((req) => {
-        console.log(req);
+      .then((req) => { 
+           
+
+        if(req.data.success === true){
+          // navigate('../register_1');
+        } 
       });
   };
 

@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { Link,useNavigate  } from "react-router-dom";
 import { Modal, Button, Form, Input } from "antd";
 import axiosClient from "../../../axiox-client";
-// import setCookie from "../../../setCookies";
+import setCookie from "../../../setCookies";
 import Cookies from 'js-cookie';
 
 const Log_modal = () => {
-  const navigate = useNavigate(); // Hook for navigation
+  const navigate = useNavigate(); 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [activeForm, setActiveForm] = useState("jobseeker");
 
